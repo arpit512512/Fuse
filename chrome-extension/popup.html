@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuse Browser Watcher</title>
+  <link rel="stylesheet" href="styles/popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="logo">
+        <div class="logo-icon">F</div>
+        <div class="logo-text">
+          <div class="title">Fuse Browser Watcher</div>
+          <div class="subtitle">Engineering Autopilot</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Connection Status -->
+    <div class="status-card">
+      <div class="status-indicator">
+        <div class="status-dot" id="statusDot"></div>
+        <span id="connectionStatus">Checking connection...</span>
+      </div>
+    </div>
+    
+    <!-- Action Control Toggle -->
+    <div class="control-card">
+      <div class="control-header">
+        <div>
+          <div class="control-title">Action Control</div>
+          <div class="control-subtitle">Allow Fuse to request browser actions</div>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="actionControlToggle" checked>
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+    </div>
+    
+    <!-- Pending Actions -->
+    <div class="pending-actions" id="pendingActionsContainer" style="display: none;">
+      <div class="section-label">
+        <span>Pending Actions</span>
+        <span class="badge" id="actionsBadge">0</span>
+      </div>
+      <div id="pendingActionsList"></div>
+    </div>
+    
+    <!-- Info Message -->
+    <div class="info-message" id="infoMessage">
+      <div class="info-content">
+        <div class="info-title">💬 Need help with something?</div>
+        <div class="info-text">Chat with Fuse to request browser actions. When Fuse suggests an action, you'll see it here for approval.</div>
+      </div>
+    </div>
+    
+    <!-- Settings Link -->
+    <div class="footer">
+      <a href="#" id="settingsLink">Settings</a>
+      <span class="separator">•</span>
+      <a href="#" id="openFuseApp">Open Fuse App</a>
+    </div>
+  </div>
+  
+  <script src="scripts/popup.js"></script>
+</body>
+</html>
+
