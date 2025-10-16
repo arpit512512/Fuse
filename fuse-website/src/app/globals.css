@@ -49,7 +49,7 @@
   --card-foreground: 222.2 84% 4.9%;
   --popover: 0 0% 100%;
   --popover-foreground: 222.2 84% 4.9%;
-  --primary: 262 83% 58%; /* #7C3AED - violet */
+  --primary: 0 0% 9%; /* #171717 - near black */
   --primary-foreground: 210 40% 98%; /* #fafafa - very light */
   --secondary: 210 40% 96%; /* #f1f5f9 - light gray */
   --secondary-foreground: 222.2 84% 4.9%;
@@ -60,12 +60,12 @@
   --destructive: 0 84% 60%;
   --border: 214.3 31.8% 91.4%; /* #e2e8f0 - light border */
   --input: 214.3 31.8% 91.4%; /* #e2e8f0 - light border */
-  --ring: 262 83% 58%;
-  --chart-1: 262 83% 58%;
-  --chart-2: 217 91% 60%;
-  --chart-3: 142 76% 36%;
-  --chart-4: 38 92% 50%;
-  --chart-5: 0 84% 60%;
+  --ring: 0 0% 9%; /* #171717 - near black */
+  --chart-1: 0 0% 45%; /* #737373 - medium gray */
+  --chart-2: 0 0% 45%; /* #737373 - medium gray */
+  --chart-3: 0 0% 45%; /* #737373 - medium gray */
+  --chart-4: 0 0% 45%; /* #737373 - medium gray */
+  --chart-5: 0 0% 45%; /* #737373 - medium gray */
   --sidebar: 0 0% 98%; /* #fafafa - very light */
   --sidebar-foreground: 222.2 84% 4.9%;
   --sidebar-primary: 262 83% 58%;
@@ -88,6 +88,17 @@
     scroll-behavior: smooth; 
   }
 }
+
+/* Hero background pattern */
+.hero-bg {
+  background: hsl(var(--background));
+}
+
+/* Grid pattern for sections */
+.grid-bg {
+  background: hsl(var(--background));
+}
+
 
 /* Utility classes for Fuse branding */
 .bg-background { background-color: hsl(var(--background)); }
