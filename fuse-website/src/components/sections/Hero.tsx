@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { FadeIn } from "@/components/FadeIn";
 import { ArrowRight, Play, CheckCircle } from "lucide-react";
+import { WaitingListForm } from "@/components/WaitingListForm";
 
 export function Hero() {
   return (
@@ -57,15 +58,15 @@ export function Hero() {
             </FadeIn>
 
             {/* CTA Buttons */}
-            <FadeIn delay={0.8} className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button size="lg" className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
-                Request a Demo
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-              <Button variant="outline" size="lg" className="border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
-                <Play className="mr-2 w-5 h-5" />
-                Watch Demo
-              </Button>
+            <FadeIn delay={0.8} className="pt-4">
+              <WaitingListForm variant="compact" className="mb-6" />
+              
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button variant="outline" size="lg" className="border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
+                  <Play className="mr-2 w-5 h-5" />
+                  Watch Demo
+                </Button>
+              </div>
             </FadeIn>
 
             {/* Trust Indicators */}

@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { FadeIn } from "@/components/FadeIn";
-import { ArrowRight } from "lucide-react";
+import { WaitingListForm } from "@/components/WaitingListForm";
 
 export function CTASection() {
   return (
@@ -22,14 +22,7 @@ export function CTASection() {
                 Early access to Fuse, direct contact with the founders, and feature priority. Limited to 50 teams.
               </p>
 
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="group/btn inline-flex items-center gap-2 px-6 py-3 text-gray-900 hover:text-gray-700 hover:bg-gray-50 rounded-lg transition-all duration-300 font-medium text-lg"
-              >
-                Join Early Access
-                <ArrowRight className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform duration-200" />
-              </motion.button>
+              <WaitingListForm />
             </motion.div>
           </div>
         </FadeIn>
